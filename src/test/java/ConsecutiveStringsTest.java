@@ -13,9 +13,16 @@ public class ConsecutiveStringsTest {
     }
 
     @Test
-    public void testConcatLongest(){
+    public void testConcatLongest1(){
         String expected = "manitobalawrenceville";
         String actual = consecutiveStrings.concatLongest(strarr1, 2);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testConcatLongest2(){
+        String expected = "blobmanitobalawrenceville";
+        String actual = consecutiveStrings.concatLongest(strarr1, 3);
         Assert.assertEquals(expected, actual);
     }
 }
