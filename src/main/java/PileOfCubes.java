@@ -1,8 +1,7 @@
 public class PileOfCubes {
 
     public long findNb(long m) {
-        //your code
-        return (long) Math.sqrt(m);
+        return (long) Math.sqrt((Math.sqrt(m))*2);
         //return -1;
     }
 }
